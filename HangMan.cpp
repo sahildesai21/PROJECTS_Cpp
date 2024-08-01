@@ -30,7 +30,7 @@ int main()
     int month_number = rand() % 12; // Randomly Genrates index number of month.
     month = months[month_number];
 
-    string hide_month(month.length(), 'X'); // here it will hide the months charater by 'X'.
+    string hide_month(month.length(), 'X'); // here it will hide the months charaters by 'X'.
 
     system("cls");
 
@@ -58,7 +58,7 @@ int main()
             message = "You're Free to GO!!";
             hangMan('f'); // for free statement
             cout << "\t\t\t\tLife: " << life << endl;
-            cout << "\t\t\tThe month is: " << month << endl;
+            cout << "\t\t\t\tThe month is: " << month << endl;
             break;
         }
     }
@@ -112,7 +112,7 @@ void hangMan(char state)
     {
         Executioner = " /";
     }
-
+    cout << "\t\t\t\t****************************HANGMAN****************************" << endl;
     cout << "\t\t\t\t___________________________" << endl;
     cout << "\t\t\t\t              " << hangMan_rope << "          |" << endl;
     cout << "\t\t\t\t              O          |" << endl;
@@ -122,5 +122,5 @@ void hangMan(char state)
     cout << "\t\t\t\t          ==" << hangMan_ground << "==      |             / \\" << endl;
     cout << "\t\t\t\t          |       |      |        " << Executioner << "    |" << endl;
     cout << "\t\t\t\t          |       |      |        ==   / \\" << endl;
-    cout << "\t\t\t\t=================================|==|=================" << endl;
+    cout << "\t\t\t\t=================================|==|==========================" << endl;
 }
